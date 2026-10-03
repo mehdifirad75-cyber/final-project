@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Choose us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <a class="auth-brand" href="index.html">Choose the best, Choose us</a>
+    <nav class="auth-nav" aria-label="Account navigation">
+      <a href="signup.html">Sign up</a>
+      <a class="auth-nav-current" href="login.html" aria-current="page">Log in</a>
+    </nav>
+  </header>
+  <main class="auth-main">
+    <section class="auth-card" aria-labelledby="login-title">
+      <p class="auth-kicker">WELCOME BACK</p>
+      <h1 id="login-title">Log in</h1>
+      <p class="auth-intro">Enter your email and password to continue.</p>
+      <form class="auth-form" data-auth-form="login">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+        <button class="auth-button" type="submit">Log in</button>
+        <p class="auth-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="auth-switch">New to Choose us? <a href="signup.html">Create an account</a></p>
+      <a class="auth-back" href="index.html">Back to the shop</a>
+    </section>
+  </main>
+</body>
+</html>

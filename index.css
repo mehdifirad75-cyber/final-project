@@ -1,0 +1,617 @@
+.nbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  text-decoration: none;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  margin-top: 40px;
+}
+.nbar a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.nbar div {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body#cartp {
+  background-image: url(./codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body #st {
+  background-image: url(./codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#frt {
+  width: 100%;
+  height: 7;
+}
+
+.hd {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgb(39, 70, 138);
+  width: 100%;
+  align-items: center;
+  height: 40px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-action-btn {
+  background-color: #d9b98d;
+  color: #1d1d1d;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  padding: 0 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hd a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #111;
+  color: whitesmoke;
+  padding: 48px 7% 18px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h2,
+.footer-section h3 {
+  margin: 0 0 14px;
+  color: bisque;
+}
+
+.footer-brand p {
+  max-width: 250px;
+  margin: 0;
+  color: #c8c8c8;
+  line-height: 1.6;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-section a {
+  color: #c8c8c8;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 38px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid #444;
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand {
+    grid-column: 1/-1;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-top: 130px;
+  background-image: url(./codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  color: beige;
+}
+
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 140px 5% 50px;
+  min-height: 60vh;
+}
+
+#cart-container .cart-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cart-empty-message {
+  min-height: 140px;
+  align-items: center;
+  justify-content: center;
+  color: #f4f1ea;
+  font-size: 1.25rem;
+}
+
+#cart-summary {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 32px;
+  border-radius: 18px;
+  background: rgba(17, 17, 17, 0.78);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f4f1ea;
+}
+
+#cart-summary h2 {
+  margin: 0 0 22px;
+  color: #f1f1f1;
+}
+
+#cart-summary-items {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#cart-summary-items li {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #f4f1ea;
+}
+
+#cart-summary-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+#cart-checkout-button {
+  min-height: 44px;
+  padding: 10px 22px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#cart-total {
+  margin: 0;
+  color: #f7d77a;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#cart-checkout-button {
+  background: #087443;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(8, 116, 67, 0.28);
+}
+
+#cart-checkout-button:hover {
+  background: #065c36;
+}
+
+main .im {
+  border-radius: 20px;
+}
+
+.btns {
+  background-color: rgb(218, 218, 85);
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.btns a {
+  color: #111;
+  text-decoration: none;
+}
+
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 130px 5% 50px;
+  background-image: url(./codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.student-verify-page {
+  min-height: 100vh;
+}
+
+.product-page .student-verify-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: min(100%, 480px);
+  color: #f4f1ea;
+}
+
+.student-verify-kicker {
+  margin: 0;
+  color: rgb(218, 218, 85);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.student-verify-card h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+}
+
+.student-verify-description,
+.student-verify-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.student-verify-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-verify-form label {
+  color: #fff;
+  font-weight: 600;
+}
+
+.student-verify-form input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font: inherit;
+}
+
+.student-verify-form input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.student-verify-form input:focus-visible {
+  outline: 2px solid rgb(218, 218, 85);
+  outline-offset: 2px;
+}
+
+.student-verify-button {
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: rgb(218, 218, 85);
+  color: #111;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.student-verify-button:hover {
+  background: #efed7a;
+}
+
+.student-verify-note {
+  font-size: 0.85rem;
+}
+
+.product-card {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(17, 17, 17, 0.78);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.payment-card {
+  display: block;
+  max-width: 560px;
+  color: #f4f1ea;
+}
+
+.payment-card h1 {
+  margin: 0 0 20px;
+}
+
+.payment-form {
+  display: grid;
+  gap: 14px;
+}
+
+.payment-form label {
+  display: grid;
+  gap: 6px;
+}
+
+.payment-form input {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  font: inherit;
+}
+
+.card-types {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.card-types legend {
+  margin-bottom: 8px;
+}
+
+.payment-form .card-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.payment-form .card-type input[type="radio"] {
+  width: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  accent-color: rgb(218, 218, 85);
+}
+
+.payment-fields {
+  display: grid;
+  gap: 14px;
+}
+
+.payment-fields[hidden] {
+  display: none;
+}
+
+.payment-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.payment-form .btns {
+  min-height: 40px;
+  font: inherit;
+  font-weight: 700;
+}
+
+.payment-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+  .payment-fields-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card img {
+  width: 46%;
+  min-width: 280px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f4f1ea;
+}
+
+#product-description,
+.cart-item [data-role="description"] {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+#product-price,
+.cart-item [data-role="price"] {
+  margin: 16px 0 22px;
+  font-size: 2rem;
+  color: #f7d77a;
+}
+
+#cont,
+.cart-item .cont {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#cont button,
+.cart-item .cont button,
+.product-info .btns {
+  border: none;
+  border-radius: 10px;
+  background: rgb(218, 218, 85);
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#cont button,
+.cart-item .cont button {
+  width: 38px;
+  height: 38px;
+  font-size: 1.5rem;
+}
+
+#quant,
+.cart-item [data-role="quantity"] {
+  background-color: #fff;
+  color: #111;
+  width: 42px;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.cart-btn {
+  background-color: blue;
+}
+
+@media (max-width: 800px) {
+  #cart-summary {
+    padding: 22px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .product-card img {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-page {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* CSS rules applied to screens 768px wide or smaller */
+  main {
+    background-image: url(./egor-litvinov-Epjx67LMVqY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+  }
+  .nbar img#logo {
+    display: none !important;
+  }
+}
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cart-item .cont {
+  justify-content: flex-start;
+}
+
+#acc {
+  position: fixed;
+  z-index: 9999;
+  margin-left: -650px;
+  display: none;
+  margin-top: -30px;
+}
+
+.cart {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.cart span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 7px;
+}
+
+.cart-btn:disabled {
+  background: #999;
+  color: white;
+  cursor: not-allowed;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Payment method</title>
+</head>
+<body>
+    <main class="product-page">
+        <section class="product-card payment-card">
+            <h1>Payment method</h1>
+            <form class="payment-form" id="payment-form">
+                <fieldset class="card-types">
+                    <legend>Choose your card</legend>
+                    <label class="card-type">
+                        <input type="radio" name="card-type" value="visa" required checked>
+                        <span>Visa</span>
+                    </label>
+                    <label class="card-type">
+                        <input type="radio" name="card-type" value="mastercard" required>
+                        <span>Mastercard</span>
+                    </label>
+                </fieldset>
+                <div class="payment-fields">
+                    <label for="cardholder">Name on card</label>
+                    <input id="cardholder" name="cardholder" autocomplete="cc-name" required>
+                    <label for="card-number">Card number</label>
+                    <input id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" pattern="[0-9 ]{13,23}" maxlength="23" required>
+                    <div class="payment-fields-row">
+                        <label for="card-expiry">Expiration date
+                            <input id="card-expiry" name="card-expiry" placeholder="MM/YY" autocomplete="cc-exp" pattern="(0[1-9]|1[0-2])/[0-9]{2}" maxlength="5" required>
+                        </label>
+                        <label for="card-cvc">Security code
+                            <input id="card-cvc" name="card-cvc" inputmode="numeric" autocomplete="cc-csc" pattern="[0-9]{3,4}" maxlength="4" required>
+                        </label>
+                    </div>
+                </div>
+                <p class="payment-note">Demo checkout only. Payment details are not sent or stored.</p>
+                <button class="btns" type="submit">Confirm purchase</button>
+                <a href="cart.html">Return to cart</a>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById("payment-form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            window.location.href = "purchase-confirmed.html";
+        });
+    </script>
+</body>
+</html>

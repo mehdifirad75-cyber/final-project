@@ -1,0 +1,52 @@
+{
+  "headphones": {
+    "price": 56.5,
+    "description": "nothing bleutooth headphones",
+    "image": "./download (3).jpg"
+  },
+  "keyboard": {
+    "price": 70,
+    "description": "whooting red switch keyboard",
+    "image": "./632052129002034838.jpg"
+  },
+  "controller": {
+    "price": 170,
+    "description": "scuf gaming ps5 controller",
+    "image": "./download (4).jpg"
+  },
+  "mouse": {
+    "price": 40,
+    "description": "razer light weight mouse",
+    "image": "./Razer Viper Mini Signature Edition.jpg"
+  },
+  "laptop": {
+    "price": 2100,
+    "description": "asus rog gaming laptop",
+    "image": "./ASUS ROG Zephyrus G Series Gaming Laptops Unveiled With RTX 5090.jpg"
+  },
+  "car": {
+    "price": 28000,
+    "description": "2026 porsche taican",
+    "image": "./4855512095025928.jpg"
+  },
+  "workstation": {
+    "price": 3000,
+    "description": "nvidia work station",
+    "image": "./136 921р.jpg"
+  },
+  "console": {
+    "price": 799,
+    "description": "ps6",
+    "image": "./438749188702715812.jpg"
+  },
+  "tv": {
+    "price": 1099,
+    "description": "samsung oled tv",
+    "image": "./Samsung QE55S90FAEXZT Vision AI.jpg"
+  },
+  "phone": {
+    "price": 1200,
+    "description": "samsung galaxy s26 ultra",
+    "image": "./SIM Free Samsung Galaxy S26 Ultra 5G 1TB AI Phone - Black.jpg"
+  }
+}

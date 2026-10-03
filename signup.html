@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | Choose us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <a class="auth-brand" href="index.html">Choose the best, Choose us</a>
+    <nav class="auth-nav" aria-label="Account navigation">
+      <a class="auth-nav-current" href="signup.html" aria-current="page">Sign up</a>
+      <a href="login.html">Log in</a>
+    </nav>
+  </header>
+  <main class="auth-main">
+    <section class="auth-card auth-card-wide" aria-labelledby="signup-title">
+      <p class="auth-kicker">JOIN CHOOSE US</p>
+      <h1 id="signup-title">Create your account</h1>
+      <p class="auth-intro">A few details and you are ready to go.</p>
+      <form class="auth-form" data-auth-form="signup">
+        <div class="auth-fields-row">
+          <div class="auth-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" maxlength="100" required>
+          </div>
+          <div class="auth-field">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="13" max="120" placeholder="18" required>
+          </div>
+        </div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="255" required>
+        <div class="auth-fields-row">
+          <div class="auth-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required>
+          </div>
+          <div class="auth-field">
+            <label for="confirm">Confirm password</label>
+            <input id="confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Repeat your password" minlength="8" required>
+          </div>
+        </div>
+        <button class="auth-button" type="submit">Create account</button>
+        <p class="auth-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+      <a class="auth-back" href="index.html">Back to the shop</a>
+    </section>
+  </main>
+</body>
+</html>
